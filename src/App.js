@@ -4,7 +4,8 @@ import axios from 'axios';
 import './App.css';
 
 //import local components
-import Character from './components/Character'
+import Character from './components/Character';
+import Breathe from './components/Breathe';
 
 
 
@@ -41,6 +42,8 @@ useEffect(fetchData, []);
            return <Character key={element.created} name={element.name} />
          })} 
       {console.log(data[0])}
+      
+      <Breathe />
     </div>
   );
 }

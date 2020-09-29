@@ -39,7 +39,7 @@ useEffect(fetchData, []);
     <div className="App">
       <h1 className="Header">Characters</h1>
       {data.map((element)=>{
-           return <Character key={element.created} name={element.name} />
+           return <Character key={element.created} name={element.name} height={element.height}/>
          })} 
       {console.log(data[0])}
       

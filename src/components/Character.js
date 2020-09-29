@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Character = (props) => {
 
- 
+
 const H2 = styled.h2`
   color: black;
   background-color: lightgrey;
@@ -39,6 +39,7 @@ border-radius: 6px;
   return (
     <div className="App">
       <H2>{props.name}</H2> 
+      <H2>{props.height}</H2>
     </div>
     
   );
